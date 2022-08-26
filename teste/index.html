@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trimestral prática</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Índice de massa</h1>
+    </header>
+    <nav>
+    </nav>
+    <div class="container">
+        <h2>Massa</h2>
+
+        <div class="row">
+            <div class="box-cell box1"> 
+            <label>Altura:</label>
+            <input type="number" id="altura" placeholder="valor da altura">
+          
+            <label>Peso:</label>
+            <input type="number" id="peso" placeholder="valor do peso">
+        </div>
+        <div class="box-cell box2">
+            <button onclick="ApagaNumeros()">Limpar</button>
+
+            <button onclick="somar()">Calcular</button>
+        </div>
+        <div class="box-cell box3">
+            <label>IMC:</label>
+            <input type="text" id="result" readonly>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <ul>
+            <li>Sesi SENAI</li>
+            <li>Bernardo Hamilton da Silva</li>
+            <li>2A</li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
