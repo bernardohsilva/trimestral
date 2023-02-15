@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poupança</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body onload="listUsuarios()">
+    <header>
+        <h1>Conta</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="usuario.html">Usuário</a></li>
+            <li><a href="motivos.html">Motivos</a></li>
+            <li><a href="list.html">Lista de Usuários</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Lista de Usuário</h2>
+        <div class="list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-Mail</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody id="table-linha">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>Sesi SENAI</li>
+            <br>
+            <li>Florianópolis</li>
+            <br>
+            <li>Bernardo Hamilon da Silva</li>
+        </ul>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
