@@ -4,10 +4,12 @@ const addUsuario = () => {
     let nome = document.getElementById('nome').value
     let email = document.getElementById('email').value
     let idade = document.getElementById('idade').value
-    let senha = document.getElementById('senha').value
+    let CPF = document.getElementById('CPF').value
+    let numero = document.getElementById('numero').value
+    let poupança = Math.floor(Math.random() * 10 )
     let divErro = document.querySelector('.div-erro')
 
-if(nome=="" || email == "" || senha == ""){
+if(nome=="" || email == ""||idade == "" || CPF == "" || numero == ""){
     divErro.style.display ='block'
 }else{
     divErro.style.display = 'none'
@@ -18,12 +20,13 @@ if(nome=="" || email == "" || senha == ""){
         usuarios = JSON.parse(localStorage.getItem('usuarios'))
     }
    
-    usuarios.push([nome, email, senha])
+    usuarios.push([nome, email, CPF, numero, idade, poupança])
     localStorage.setItem('usuarios', JSON.stringify(usuarios))
     document.getElementById('nome').value = ""
     document.getElementById('email').value = ""
-    document.getElementById('senha').value = ""
+    document.getElementById('CPF').value = ""
     document.getElementById('idade').value = ""
+    document.getElementById('numero').value = ""
 }
 
 const listUsuarios = () => {
